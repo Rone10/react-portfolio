@@ -1,0 +1,4 @@
+.landing {
+    @apply bg-blue-700;
+    @apply bg-gradient-to-r from-red-700 via-red-800 to-red-600;
+}
