@@ -13,11 +13,14 @@ import Detail from './components/Detail'
 function App() {
     return (
         <div className="min-h-screen">
-            <Navbar />
+
             <BrowserRouter>
                 <div>
-                    <Route path="/" exact component={Page} />
-                    <Route path="/detail" exact component={Detail} />
+                    <Navbar />
+                    <Route path="/" exact component={Landing} />
+                    <Route path="/projects" exact component={Projects} />
+                    <Route path="/blog" exact component={Blog} />
+                    <Route path="/contact" exact component={Contact} />
                 </div>
             </BrowserRouter>
         </div>

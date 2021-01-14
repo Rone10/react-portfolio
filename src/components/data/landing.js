@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 const content = () => {
     return (
@@ -10,8 +10,15 @@ const content = () => {
                 <div className="flex flex-col w-3/5 p-20">
                     <h1 className="font-bold text-5xl">Haruna Njie</h1>
                     <h3 className="mt-1 text-3xl">Full-stack Developer</h3>
+
                 </div>
             </div>
+            <div className="flex flex-col w-3/5 p-20">
+                <Link activeClass="active" to="/projects" className="link-tag text-black">
+                    Projects
+            </Link>
+            </div>
+
             <div className="bio w-4/5 mx-auto text-black my-14">
                 <h1>About Me</h1>
                 <p>  am Junior Web developer able to build a Web

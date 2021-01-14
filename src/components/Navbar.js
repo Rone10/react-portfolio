@@ -1,6 +1,6 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
-import { Link } from 'react-scroll'
+import { Link, BrowserRouter as Router } from 'react-router-dom'
+// import { Link } from 'react-scroll'
 
 import "../css/Navbar.css"
 
@@ -15,20 +15,24 @@ const Navbar = () => {
                             <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
                         </button>
                     </div>
+
                     <div className="   ">
-                        <Link activeClass="active" to="home" spy={true} smooth={true} duration={1000} className="link-tag">
+
+                        <Link to="/" className="link-tag">
                             Home
                         </Link>
-                        <Link activeClass="active" to="projects" spy={true} smooth={true} duration={1000} className="link-tag">
+
+                        <Link activeClass="active" to="/projects" className="link-tag">
                             Projects
                         </Link>
-                        <Link activeClass="active" to="blog" spy={true} smooth={true} duration={1000} className="link-tag">
+                        <Link activeClass="active" to="/blog" className="link-tag">
                             Blog
                         </Link>
-                        <Link activeClass="active" to="contact" spy={true} smooth={true} duration={1000} className="link-tag">
+                        <Link activeClass="active" to="/contact" className="link-tag">
                             Contact
                         </Link>
                     </div>
+
                 </div>
             </div>
         </nav>
