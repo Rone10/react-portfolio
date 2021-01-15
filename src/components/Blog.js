@@ -1,7 +1,7 @@
 import React from 'react'
-import content from './data/blog'
+import BlogPosts from './data/blog'
 const Blog = () => {
-    return content();
+    return <BlogPosts />
 };
 
 export default Blog; 
