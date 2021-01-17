@@ -1,111 +1,26 @@
 const content = () => {
     return (
         <div id="contact" className="pt-20 w-4/5 mx-auto">
-            <h1 className="text-5xl font-bold">Contact Me</h1>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
-            <p>  am Junior Web developer able to build a Web
-            presence from the ground up - from concept,
-            navigation, layout and programming to UX and SEO.
-            Skilled at writing well-designed, testable and efficient
-            code using current best practices in Web development. Fast
-            learner, hard worker and team player who is proficient in an
-            array of scripting languages and multimedia Web tools.
-            </p>
+            <form className=" w-4/5 mx-auto bg-gray-400" name="contact" method="POST" data-netlify="true">
+                <p>
+                    <label>Your Name: <input type="text" name="name" /></label>
+                </p>
+                <p>
+                    <label>Your Email: <input type="email" name="email" /></label>
+                </p>
+                <p>
+                    <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                    </select></label>
+                </p>
+                <p>
+                    <label>Message: <textarea name="message"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send</button>
+                </p>
+            </form>
 
         </div>
     );
