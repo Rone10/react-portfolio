@@ -3,7 +3,7 @@ const content = () => {
         <div id="contact" className="pt-20 w-4/5 mx-auto">
             <form className=" w-4/5 mx-auto bg-gray-400" name="contact" method="POST" data-netlify="true">
                 <p>
-                    <label>Your Name: <input type="text" name="name" /></label>
+                    <label>Your Name:: <input type="text" name="name" /></label>
                 </p>
                 <p>
                     <label>Your Email: <input type="email" name="email" /></label>

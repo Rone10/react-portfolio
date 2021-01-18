@@ -10,6 +10,8 @@ const query = `
         brief
         slug
         cuid
+        coverImage
+        dateAdded
       }
     }
   }
@@ -36,11 +38,18 @@ const BlogPosts = () => {
         fetchData();
     }, []);
     const articles = posts.map(post => {
-        return <div key={post.cuid} className=" mt-20 text-black">
-            <h1>Title: {post.title}</h1>
-            <p>{post.brief}</p>
-            <a href={`https://harone.me/${post.slug}`} >View Post</a>
+        const datePosted = new Date(post.dateAdded).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })
+        const brief = post.brief.substr(0, 80)
+        return <div key={post.cuid} className=" mt-20 text-black w-2/5">
+            <div><img src={post.coverImage} /></div>
+            <div className="mt-5">
+                <p className="my-2">Posted on {datePosted}</p>
+                <h1 className="my-3 capitalize text-2xl font-bold">{post.title}</h1>
+                <p className="text-lg mb-5">{brief}</p>
+                <a className="border-2 p-2 mt-20" href={`https://harone.me/${post.slug}`} >View Post</a>
+            </div>
         </div>
+
     });
 
     return (

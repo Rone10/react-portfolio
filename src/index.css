@@ -4,4 +4,6 @@
 
 body {
     @apply min-h-screen;
+    @apply max-w-full;
+    font-family: 'Montserrat', sans-serif;
 }
