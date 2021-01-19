@@ -2,18 +2,15 @@
 const content = () => {
     return (
         <div id="home" className="text-whites mt-10 w-screen h-screen">
-            <div className="bg-hero-landing bg-auto bg-center w-full h-full" >
+            <div className="bg-hero-landing bg-auto bg-center w-full h-4/5" >
                 <div className="w-full h-full bg-black bg-opacity-75 flex items-center ">
-                    <div className="w-3/5 mx-auto text-white text-3xl ">
+                    <div className="w-3/5 mx-auto text-white text-3xl animate-bounce-once">
                         <h1 className=" text-5xl  text-center  ">Hi, I'm <span className="font-bold">Haruna Njie</span>. </h1>
                         <br />
-                        <div className="text-cente font-bold">
-                            <p >I am a software engineer. I love coding in Python and Javascript. <br />
-                        In the backend, I use Django and the Django Rest Framework to build server-side logic.<br />
-                                <br />
-                        In the frontend I use React to build Single-Page-Apps.
+                        <div className="text-center font-bold leading-relaxed">
+                            <p >I am a full-stack software developer.</p>
+                            <p> I build web applications using Django and React.</p>
 
-                        </p>
                         </div>
 
                     </div>
@@ -25,6 +22,7 @@ const content = () => {
                     <li>Python</li>
                     <li>Django</li>
                     <li>Django Rest Framework</li>
+                    <li>Postgres    </li>
                     <li>Docker</li>
                     <li>Javascript</li>
                     <li>React</li>

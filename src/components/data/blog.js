@@ -40,22 +40,25 @@ const BlogPosts = () => {
     const articles = posts.map(post => {
         const datePosted = new Date(post.dateAdded).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })
         const brief = post.brief.substr(0, 80)
-        return <div key={post.cuid} className=" mt-20 text-black w-2/5">
-            <div><img src={post.coverImage} /></div>
-            <div className="mt-5">
-                <p className="my-2">Posted on {datePosted}</p>
-                <h1 className="my-3 capitalize text-2xl font-bold">{post.title}</h1>
+        return <div key={post.cuid} className="  text-black  w-4/5 ">
+            <div><img className="rounded-t-lg" src={post.coverImage} /></div>
+            <div className="mt-3">
+                <p className="my-1">Posted on {datePosted}</p>
+                <h1 className="my-1 capitalize text-2xl font-bold">{post.title}</h1>
                 <p className="text-lg mb-5">{brief}</p>
-                <a className="border-2 p-2 mt-20" href={`https://harone.me/${post.slug}`} >View Post</a>
+                <a className="border-2 p-2 mt-20 hover:bg-black hover:text-white" href={`https://harone.me/${post.slug}`} >View Post</a>
             </div>
         </div>
 
     });
 
     return (
-        <div className="w-3/5 mx-auto">
-            <h1>My Blog Articles</h1>
-            {articles}
+        <div className="w-4/5 mx-auto">
+            <h1 className="capitalize font-bold text-center text-5xl">My Blog Articles</h1>
+            <div className="grid grid-cols-3 gap-4 mt-10">
+                {articles}
+            </div>
+
 
         </div>
     );
