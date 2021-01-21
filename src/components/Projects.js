@@ -11,4 +11,4 @@ const Projects = () => {
     return <ProjectCard items={projects} />;
 };
 
-export default Projects;
+export default Projects; 

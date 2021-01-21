@@ -54,10 +54,11 @@ const BlogPosts = () => {
 
     return (
         <div className="w-4/5 mx-auto">
-            <h1 className="capitalize font-bold text-center text-5xl">My Blog Articles</h1>
-            <div className="grid grid-cols-3 gap-4 mt-10">
+            <h1 className="capitalize font-bold text-center md:text-5xl text-3xl">My Blog Articles</h1>
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
                 {articles}
             </div>
+            <div className="my-10 mx-auto w-96 h-96 xl:bg-twitter-blue md:bg-green-400 lg:bg-yellow-400 bg-indigo-700"></div>
 
 
         </div>
