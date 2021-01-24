@@ -7,3 +7,14 @@ body {
     @apply max-w-full;
     font-family: 'Montserrat', sans-serif;
 }
+blockquote{
+    @apply border-l-4 border-black bg-gray-300 pl-5 my-5;
+};
+
+.string > h1 {
+    @apply my-20 font-bold text-7xl;
+}
+.rad {
+    border-left-color: black;
+
+}

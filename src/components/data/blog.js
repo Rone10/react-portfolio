@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import LoadSpinner from '../LoadSpinner'
 
 const query = `
 {
@@ -22,7 +22,7 @@ const BlogPosts = () => {
     const [posts, setPosts] = useState([]);
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('https://api.hashnode.com', {
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json',
@@ -36,12 +36,12 @@ const BlogPosts = () => {
 
         }
         fetchData();
-    }, []);
+    }, [posts]);
     const articles = posts.map(post => {
         const datePosted = new Date(post.dateAdded).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })
         const brief = post.brief.substr(0, 80)
         return <div key={post.cuid} className="  text-black  w-4/5 ">
-            <div><img className="rounded-t-lg" src={post.coverImage} /></div>
+            <div><img className="rounded-t-lg" src={post.coverImage} alt="img" /></div>
             <div className="mt-3">
                 <p className="my-1">Posted on {datePosted}</p>
                 <h1 className="my-1 capitalize text-2xl font-bold">{post.title}</h1>
@@ -52,13 +52,23 @@ const BlogPosts = () => {
 
     });
 
+    const message = "Fetching Posts"
     return (
-        <div className="w-4/5 mx-auto">
+        <div className="md:w-4/5 items-center mx-auto ">
             <h1 className="capitalize font-bold text-center md:text-5xl text-3xl">My Blog Articles</h1>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
-                {articles}
-            </div>
-            <div className="my-10 mx-auto w-96 h-96 xl:bg-twitter-blue md:bg-green-400 lg:bg-yellow-400 bg-indigo-700"></div>
+
+
+
+            {
+
+                posts.length > 0 ?
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                        {articles}
+                    </div> :
+                    <LoadSpinner message={message} />
+            }
+
+
 
 
         </div>

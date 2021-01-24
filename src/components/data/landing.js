@@ -32,7 +32,7 @@ const content = () => {
                 </ul>
             </div>
 
-            <span className="text-xs">Background Photo by <a target="_blank" href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+            <span className="text-xs">Background Photo by <a target="_blank" rel="noreferrer" href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
         </div>
     );

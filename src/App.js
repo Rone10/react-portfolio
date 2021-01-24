@@ -1,7 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Landing from './components/Landing'
 import Projects from "./components/Projects"
 import Blog from './components/Blog'

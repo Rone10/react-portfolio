@@ -17,7 +17,13 @@ module.exports = {
         'bounce-once': 'bounce 2s linear',
       },
     },
+
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+
+  ],
+
   variants: {
     extend: {},
   },

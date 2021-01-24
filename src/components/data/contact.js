@@ -13,22 +13,22 @@ const content = () => {
 
                     <div className="mt-5">
                         <a href="https://harone.me" className="flex">
-                            <img src={email} className="w-6 h-6 mr-2" />Email
+                            <img src={email} className="w-6 h-6 mr-2" alt="img" />Email
                         </a>
                     </div>
                     <div className="mt-5">
                         <a href="https://harone.me" className="flex text-twitter-blue">
-                            <img src={twitter} className="w-6 h-6 mr-2 " />Twitter
+                            <img src={twitter} className="w-6 h-6 mr-2 " alt="img" />Twitter
                         </a>
                     </div>
                     <div className="mt-5">
                         <a href="https://harone.me" className="flex">
-                            <img src={github} className="w-6 h-6 mr-2" />Github
+                            <img src={github} className="w-6 h-6 mr-2" alt="img" />Github
                         </a>
                     </div>
                     <div className="mt-5">
                         <a href="https://harone.me" className="flex ">
-                            <img src={blog} className="w-6 h-6 mr-2 " />My blog
+                            <img src={blog} className="w-6 h-6 mr-2 " alt="img" />My blog
                         </a>
                     </div>
 
