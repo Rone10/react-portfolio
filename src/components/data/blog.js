@@ -40,7 +40,7 @@ const BlogPosts = () => {
     const articles = posts.map(post => {
         const datePosted = new Date(post.dateAdded).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })
         const brief = post.brief.substr(0, 80)
-        return <div key={post.cuid} className="  text-black  w-4/5 ">
+        return <div key={post.cuid} className="  text-black  w-full my-5">
             <div><img className="rounded-t-lg" src={post.coverImage} alt="img" /></div>
             <div className="mt-3">
                 <p className="my-1">Posted on {datePosted}</p>
@@ -54,23 +54,15 @@ const BlogPosts = () => {
 
     const message = "Fetching Posts"
     return (
-        <div className="md:w-4/5 items-center mx-auto ">
-            <h1 className="capitalize font-bold text-center md:text-5xl text-3xl">My Blog Articles</h1>
-
-
-
+        <div className="w-full lg:w-4/5 items-center mx-auto ">
+            <div className="md:mb-10 capitalize font-bold text-center md:text-5xl text-3xl"><h1 >My Blog Articles</h1></div>
             {
-
                 posts.length > 0 ?
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-4 mt-10 p-2">
                         {articles}
                     </div> :
                     <LoadSpinner message={message} />
             }
-
-
-
-
         </div>
     );
 
