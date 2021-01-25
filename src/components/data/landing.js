@@ -4,8 +4,8 @@ const content = () => {
         <div id="home" className=" mt-10 max-w-full h-screen">
             <div className="bg-hero-landing bg-auto bg-center w-full h-4/5" >
                 <div className="w-full h-full bg-black bg-opacity-75 flex items-center ">
-                    <div className="w-3/5 mx-auto text-white text-3xl animate-bounce-once">
-                        <h1 className=" text-5xl  text-center  ">Hi, I'm <span className="font-bold">Haruna Njie</span>. </h1>
+                    <div className="md:w-3/5 w-full mx-auto text-white text-3xl animate-bounce-once">
+                        <h1 className=" md:text-5xl text-3xl text-center  ">Hi, I'm <span className="font-bold">Haruna Njie</span>. </h1>
                         <br />
                         <div className="text-center font-bold leading-relaxed">
                             <p >I am a full-stack software developer.</p>

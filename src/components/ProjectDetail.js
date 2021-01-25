@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown'
 
 const ProjectDetail = props => {
     const project = props.item[0]
+    console.log(project)
 
     return <div className="border-2 mt-10 flex flex-col shadow-sm hover:shadow-xl w-full md:w-4/5 mx-auto bg-white ">
         <div className="w-full bg-green-500 ">

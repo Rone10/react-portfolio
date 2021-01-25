@@ -4,7 +4,7 @@
     @apply text-black text-base bg-white h-16 p-6 mb-10 sticky top-0 w-full z-50;
 }
 .navs{
-    @apply text-white font-bold text-center transition duration-1000 ease-in-out;
+    @apply text-white font-bold text-center transform transition duration-1000 ease-in-out;
     @apply flex flex-col justify-between shadow-lg mx-auto uppercase;
     @apply text-black text-base bg-white h-auto p-6 mb-10 sticky top-0 w-full z-50;
 }
@@ -13,6 +13,7 @@
     @apply cursor-pointer block mt-4 lg:inline-block; 
     @apply lg:mt-0 mr-8 border-white border-b-4 hover:border-black;
 }
+
 .link-sm {
     @apply cursor-pointer block mt-4 inline-block; 
     @apply mt-0  border-white border-b-4 ;
