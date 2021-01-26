@@ -5,6 +5,7 @@
 body {
     @apply min-h-screen;
     @apply max-w-full;
+    @apply bg-gray-200;
     font-family: 'Montserrat', sans-serif;
 }
 blockquote{

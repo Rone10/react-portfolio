@@ -8,7 +8,9 @@ import projects from './data/projects'
 // }
 
 const Projects = () => {
-    return <ProjectCard items={projects} />;
+    return <div className="w-full h-full bg-black pb-10">
+        <ProjectCard items={projects} />
+    </div>
 };
 
 export default Projects; 

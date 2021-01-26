@@ -1,12 +1,12 @@
 .nav{
     @apply text-white font-bold text-center sticky;
     @apply flex justify-between shadow-lg mx-auto uppercase;
-    @apply text-black text-base bg-white h-16 p-6 mb-10 sticky top-0 w-full z-50;
+    @apply text-black text-base bg-white h-16 p-6  sticky top-0 w-full z-50;
 }
 .navs{
     @apply text-white font-bold text-center transform transition duration-1000 ease-in-out;
     @apply flex flex-col justify-between shadow-lg mx-auto uppercase;
-    @apply text-black text-base bg-white h-auto p-6 mb-10 sticky top-0 w-full z-50;
+    @apply text-black text-base bg-white h-auto md:h-16 p-6  sticky top-0 w-full z-50;
 }
 
 .link-tag {
