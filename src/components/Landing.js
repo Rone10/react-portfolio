@@ -1,11 +1,11 @@
 
 import "../css/Landing.css"
-import content from './data/landing'
+import Content from './data/landing'
 
 
 
 const Landing = () => {
-    return content();
+    return <Content />;
 };
 
-export default Landing;
+export default Landing; 

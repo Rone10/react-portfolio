@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav className={open ? "navs" : "nav"}>
             <div className=" w-full mx-auto md:w-4/5 lg:flex lg:justify-center">
                 <div className=" flex ">
-                    <div className="block lg:hidden absolute top-0 left-0">
+                    <div className="block lg:hidden absolute top-3 left-0">
                         <button onClick={() => setOpen(!open)} className=" flex items-center px-3 py-2 border rounded  border-teal-500 hover:border-white">
 
                             <div className="">

@@ -8,7 +8,7 @@ import projects from './data/projects'
 // }
 
 const Projects = () => {
-    return <div className="w-full h-full bg-black pb-10">
+    return <div className="w-full h-full  bg-black pb-10 pt-10">
         <ProjectCard items={projects} />
     </div>
 };

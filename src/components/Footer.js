@@ -1,28 +1,13 @@
 import React from 'react'
 import "../css/Footer.css"
+
+
 const Footer = () => {
-    return <nav class="foot">
-
-
-        <div class="w-full flex justify-center flex-grow lg:flex md:items-center lg:w-auto ">
-
-            <a href="{% url 'products:list' %}" class="block mt-4 lg:inline-block lg:mt-0 text-white border-red-900 border-b-4 hover:border-white mr-8 ">
-                Copyright &#169; 2020
-      </a>
-            <p class="block mt-4 lg:inline-block lg:mt-0 text-white hover:bg-black mr-8">
-                |
-        </p>
-            <a href="{% url 'products:list' %}" class="block mt-4 lg:inline-block lg:mt-0 text-white border-red-900 border-b-4 hover:border-white mr-8">
-                Home
-      </a>
-
-            <a href="{% url 'products:order' %}" class="block mt-4 lg:inline-block lg:mt-0 text-white border-red-900 border-b-4 hover:border-white">
-                About
-      </a>
-
-
+    return <div class=" bg-red-600 h-16 p-6 absolute bottom-0 flex w-full foo">
+        <div>
+            <p>Copyright 2021 | Haruna Njie</p>
         </div>
-    </nav>
+    </div>
 };
 
 export default Footer;

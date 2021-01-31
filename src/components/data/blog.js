@@ -40,11 +40,17 @@ const BlogPosts = () => {
     const articles = posts.map(post => {
         const datePosted = new Date(post.dateAdded).toLocaleString("en-US", { month: "long", day: "numeric", year: "numeric" })
         const brief = post.brief.substr(0, 80)
-        return <div key={post.cuid} className="  text-black  w-full my-5">
-            <div><img className="rounded-t-lg" src={post.coverImage} alt="img" /></div>
+        return <div key={post.cuid} className="  text-black  w-full my-5 border-black pb-3 cursor-pointer rounded-md border-b-4">
+            <a target="_blank" className="" href={`https://harone.me/${post.slug}`} >
+                <div><img className="rounded-t-lg" src={post.coverImage} alt="img" /></div>
+            </a>
+
             <div className="mt-3">
                 <p className="my-1">Posted on {datePosted}</p>
-                <h1 className="my-1 capitalize text-2xl font-bold">{post.title}</h1>
+                <a className="" target="_blank" href={`https://harone.me/${post.slug}`} >
+                    <h1 className="my-1 capitalize text-2xl font-bold">{post.title}</h1>
+
+                </a>
                 <p className="text-lg mb-5">{brief}</p>
                 <a className="border-2 p-2 mt-20 hover:bg-black hover:text-white" href={`https://harone.me/${post.slug}`} >View Post</a>
             </div>
