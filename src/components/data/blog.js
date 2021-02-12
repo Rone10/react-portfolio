@@ -31,7 +31,7 @@ const BlogPosts = () => {
             })
             const res = await response.json();
             setPosts(res.data.user.publication.posts);
-            console.log(posts)
+            // console.log(posts)
             // posts: ApiResponse.data.user.publication.posts
 
         }

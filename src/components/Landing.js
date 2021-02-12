@@ -5,7 +5,12 @@ import Content from './data/landing'
 
 
 const Landing = () => {
-    return <Content />;
+
+    return <div className=" mb-20">
+        <Content />
+    </div>
+
+
 };
 
 export default Landing; 

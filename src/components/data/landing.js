@@ -2,14 +2,14 @@ import React from 'react'
 
 
 const Content = () => {
-    return <div id="home" className=" mt-10 max-w-full h-screen">
-        <div className="bg-hero-landing bg-auto bg-center w-full h-4/5" >
+    return (<div id="home" className=" mt-10 max-w-full ">
+        <div className="bg-hero-landing bg-auto bg-center w-full h-screen" >
             <div className="w-full h-full bg-black bg-opacity-75 flex items-center ">
                 <div className="md:w-3/5 w-full mx-auto text-white  animate-bounce-once">
                     <h1 className=" md:text-5xl text-3xl text-center  ">Hi, I'm <span className="font-bold">Haruna Njie</span>. </h1>
                     <br />
                     <div className="text-center font-bold leading-relaxed text-2xl md:text-3xl">
-                        <p >I am a full-stack software developer.</p>
+                        <p >I am a software developer.</p>
                         <p> I build web applications using Django and React.</p>
 
                     </div>
@@ -36,7 +36,7 @@ const Content = () => {
         {/* <span className="text-xs">Background Photo by <a target="_blank" rel="noreferrer" href="https://unsplash.com/@joshuaryanphoto?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Joshua Reddekopp</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span> */}
 
     </div>
-
+    );
 };
 
 export default Content;

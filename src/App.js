@@ -12,7 +12,7 @@ import ScrollToTop from './components/ScrollToTop'
 
 function App() {
     return (
-        <div className="min-h-screen relative">
+        <div className="min-h-screen ">
 
             <BrowserRouter>
                 <div>
